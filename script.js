@@ -15,7 +15,7 @@ let subtotalInfo = {
 ///// FUNÇÕES /////
 function atualizarPagina(){
   quantidadeSubtotal.innerText = subtotalInfo.quantidade + " itens";
-  valorSubtotal.innerText = subtotalInfo.valor;
+  valorSubtotal.innerText = subtotalInfo.valor.toFixed(2);
   inpuQuantidadeProduto.value = subtotalInfo.quantidade
 }
 atualizarPagina()
